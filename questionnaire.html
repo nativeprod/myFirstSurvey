@@ -1,0 +1,49 @@
+
+<head>
+  <title>Important questionnaire</title>
+  <meta name="description" content="The very first and most important questionnaire you have to fill in. Do not forget to do this.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div>
+  <h1 id="title">First Interview Questionnaire</h1>
+</div>
+
+<div>
+  <p id="description">
+This is a questionnaire where we'll assess your current physical shape, your availabilities, equipment, etc.<br>
+It is very important that you answer every question carefully. Very.
+  </p>
+</div>
+<div>
+  <form id="survey-form">
+    <label for="name" id="name-label">What's your full name?</label><br>
+    <input id="name" type="text" name="name" placeholder="John" required><br>
+    <label for="email" id="email-label">Enter a valid email address</label><br>
+    <input id="email" type="email" name="email" placeholder="davidgilltc@gmail.com" required><br>
+    <label for="number" id="number-label">How old are you?</label><br>
+    <input id="number" type="number" name="age" min="3" max="77" placeholder="30"><br>
+
+    <label for="dropdown" id="level-label">How much activity do you currently do each week?</label><br>
+    <select id="dropdown" name="dropdown" >
+      <option value="30">Less than 60 minutes</option>
+      <option value="60">About 60 minutes</option>
+      <option value="160">More than 60 minutes</option>
+      <option value="260">A lot more than 60 minutes</option>
+    </select><br>
+
+    <label for="fav_activity" id="fav_activity-label">What is your favourite activity?</label><br>
+    <input id="fav_activity" type="radio" name="fav_activity" value="running">Running<br>
+    <input id="fav_activity" type="radio" name="fav_activity" value="climbing">Rock climbing<br>
+    <input id="fav_activity" type="radio" name="fav_activity" value="cycling">Mountain biking<br>
+  <div id="checkboxes">
+    <input type="checkbox" value="smoker">I am a smoker<br>
+    <input type="checkbox" value="newsletter" checked>I want to find out more about this!<br>
+  </div>
+    <label for="text-area" id="text-area-label">Please enter additionnal comments here:</label><br>
+    <textarea id="text-area" rows="5" placeholder="Everything you write here is anonymous">
+    </textarea><br>
+    <input type="submit" value="Submit" id="submit">
+  </form>
+</div>
+</body>
